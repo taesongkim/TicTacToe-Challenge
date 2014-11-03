@@ -1,0 +1,30 @@
+
+.tttrow {
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	border: 1px solid white;
+	cursor: pointer;
+	float: left;
+	margin-left: 0;
+
+}
+
+.played {
+	cursor: default;
+}
+
+.container {
+	margin-left: -15px;
+}
+
+i.fa-close {
+	font-size: 95px;
+	margin-left: 13px;
+}
+
+i.fa-circle-o {
+	font-size: 75px;
+	margin-left: 16px;
+	margin-top: 12px;
+}
