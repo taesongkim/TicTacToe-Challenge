@@ -1,6 +1,6 @@
 
 .tttrow {
-	background-color: green;
+	background-color: #d8d8d8;
 	height: 100px;
 	width: 100px;
 	border: 1px solid white;
@@ -19,11 +19,13 @@
 }
 
 i.fa-close {
+	color: white;
 	font-size: 95px;
 	margin-left: 13px;
 }
 
 i.fa-circle-o {
+	color: white;
 	font-size: 75px;
 	margin-left: 16px;
 	margin-top: 12px;
