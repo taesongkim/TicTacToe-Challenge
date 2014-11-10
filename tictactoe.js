@@ -31,7 +31,9 @@ var turnCount = 0;
 
 var currentPlayer = 1;
 
-$('.tttrow').bind('click', function () {
+var winSwitch = 0;
+
+$('.tsquare').bind('click', function () {
   $(this).css('background', '#706e6e');
   var iconElement = $(this).children('i');
   var position = $(this).attr('id')
@@ -49,6 +51,7 @@ $('.tttrow').bind('click', function () {
       if (checkForWin()) {
         alert('Player' + currentPlayer + ' has won the game!');
         location.reload();
+        winSwitch = 1;
       }
       currentPlayer = 2;
     }
@@ -58,6 +61,7 @@ $('.tttrow').bind('click', function () {
       if (checkForWin()) {
         alert('Player' + currentPlayer + ' has won the game!');
         location.reload();
+        winSwitch = 1;
       }
       currentPlayer = 1;
     }
@@ -65,7 +69,7 @@ $('.tttrow').bind('click', function () {
     turnCount ++;
     
   }
-  if (turnCount == 9) {
+  if (turnCount == 9 && winSwitch == 0) {
     alert("Looks like it's a tie! Lets try again.");
     location.reload();
   };
